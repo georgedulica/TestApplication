@@ -5,7 +5,7 @@ RUN cd testapp-project &&  mvn install
 
 FROM tomcat:9-jre11
 LABEL "Project"="Testapp"
-LABEL "Author"="Imran"
+LABEL "Author"="George"
 RUN rm -rf /usr/local/tomcat/webapps/*
 COPY --from=BUILD_IMAGE testapp-project/target/testapp-v2.war /usr/local/tomcat/webapps/ROOT.war
 
