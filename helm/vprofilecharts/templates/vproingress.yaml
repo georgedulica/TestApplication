@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: testapp.georgedulica.online
+  - host: app.georgedulica.online
     http:
       paths:
       - path: /
