@@ -66,4 +66,4 @@ jobs:
           chart-path: helm/testappcharts
           namespace: default
           values: appimage=${{ secrets.REGISTRY }}/${{ env.ECR_REPOSITORY }},apptag=${{ github.run_number }}
-          name: testapp-stack    
+          name: app-stack    
